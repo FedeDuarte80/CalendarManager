@@ -33,6 +33,7 @@
 		88CEF67D2ABD0D1800ADE659 /* CalendarTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTab.swift; sourceTree = "<group>"; };
 		88CEF67F2ABD0D4E00ADE659 /* ListTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTab.swift; sourceTree = "<group>"; };
 		88CEF6812ABD0EDB00ADE659 /* UICalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICalendarView.swift; sourceTree = "<group>"; };
+		88CEF6832ABD1E9300ADE659 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +66,7 @@
 		88CEF6642ABD07AF00ADE659 /* CalendarManager */ = {
 			isa = PBXGroup;
 			children = (
+				88CEF6832ABD1E9300ADE659 /* README.md */,
 				88CEF6652ABD07AF00ADE659 /* CalendarManagerApp.swift */,
 				88CEF6672ABD07AF00ADE659 /* ContentView.swift */,
 				88CEF67D2ABD0D1800ADE659 /* CalendarTab.swift */,
