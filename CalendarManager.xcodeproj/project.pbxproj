@@ -11,6 +11,13 @@
 		88CEF6682ABD07AF00ADE659 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CEF6672ABD07AF00ADE659 /* ContentView.swift */; };
 		88CEF66A2ABD07B000ADE659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88CEF6692ABD07B000ADE659 /* Assets.xcassets */; };
 		88CEF66D2ABD07B000ADE659 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88CEF66C2ABD07B000ADE659 /* Preview Assets.xcassets */; };
+		88CEF6752ABD07DC00ADE659 /* Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88CEF6732ABD07DC00ADE659 /* Manager.xcdatamodeld */; };
+		88CEF6782ABD088B00ADE659 /* ParentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CEF6772ABD088B00ADE659 /* ParentManager.swift */; };
+		88CEF67A2ABD08D100ADE659 /* ParentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CEF6792ABD08D100ADE659 /* ParentEntity.swift */; };
+		88CEF67C2ABD096500ADE659 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CEF67B2ABD096500ADE659 /* Date.swift */; };
+		88CEF67E2ABD0D1800ADE659 /* CalendarTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CEF67D2ABD0D1800ADE659 /* CalendarTab.swift */; };
+		88CEF6802ABD0D4E00ADE659 /* ListTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CEF67F2ABD0D4E00ADE659 /* ListTab.swift */; };
+		88CEF6822ABD0EDB00ADE659 /* UICalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CEF6812ABD0EDB00ADE659 /* UICalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		88CEF6672ABD07AF00ADE659 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		88CEF6692ABD07B000ADE659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88CEF66C2ABD07B000ADE659 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		88CEF6742ABD07DC00ADE659 /* Manager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Manager.xcdatamodel; sourceTree = "<group>"; };
+		88CEF6772ABD088B00ADE659 /* ParentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentManager.swift; sourceTree = "<group>"; };
+		88CEF6792ABD08D100ADE659 /* ParentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentEntity.swift; sourceTree = "<group>"; };
+		88CEF67B2ABD096500ADE659 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		88CEF67D2ABD0D1800ADE659 /* CalendarTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTab.swift; sourceTree = "<group>"; };
+		88CEF67F2ABD0D4E00ADE659 /* ListTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTab.swift; sourceTree = "<group>"; };
+		88CEF6812ABD0EDB00ADE659 /* UICalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,10 @@
 			children = (
 				88CEF6652ABD07AF00ADE659 /* CalendarManagerApp.swift */,
 				88CEF6672ABD07AF00ADE659 /* ContentView.swift */,
+				88CEF67D2ABD0D1800ADE659 /* CalendarTab.swift */,
+				88CEF6812ABD0EDB00ADE659 /* UICalendarView.swift */,
+				88CEF67F2ABD0D4E00ADE659 /* ListTab.swift */,
+				88CEF6762ABD07E000ADE659 /* Models */,
 				88CEF6692ABD07B000ADE659 /* Assets.xcassets */,
 				88CEF66B2ABD07B000ADE659 /* Preview Content */,
 			);
@@ -65,6 +83,17 @@
 				88CEF66C2ABD07B000ADE659 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88CEF6762ABD07E000ADE659 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				88CEF6792ABD08D100ADE659 /* ParentEntity.swift */,
+				88CEF67B2ABD096500ADE659 /* Date.swift */,
+				88CEF6732ABD07DC00ADE659 /* Manager.xcdatamodeld */,
+				88CEF6772ABD088B00ADE659 /* ParentManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +166,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88CEF6822ABD0EDB00ADE659 /* UICalendarView.swift in Sources */,
 				88CEF6682ABD07AF00ADE659 /* ContentView.swift in Sources */,
+				88CEF67E2ABD0D1800ADE659 /* CalendarTab.swift in Sources */,
+				88CEF67C2ABD096500ADE659 /* Date.swift in Sources */,
+				88CEF6802ABD0D4E00ADE659 /* ListTab.swift in Sources */,
 				88CEF6662ABD07AF00ADE659 /* CalendarManagerApp.swift in Sources */,
+				88CEF6752ABD07DC00ADE659 /* Manager.xcdatamodeld in Sources */,
+				88CEF67A2ABD08D100ADE659 /* ParentEntity.swift in Sources */,
+				88CEF6782ABD088B00ADE659 /* ParentManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +309,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,9 +318,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fddg..CalendarManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,8 +341,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +350,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fddg..CalendarManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -339,6 +381,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		88CEF6732ABD07DC00ADE659 /* Manager.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				88CEF6742ABD07DC00ADE659 /* Manager.xcdatamodel */,
+			);
+			currentVersion = 88CEF6742ABD07DC00ADE659 /* Manager.xcdatamodel */;
+			path = Manager.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 88CEF65A2ABD07AF00ADE659 /* Project object */;
 }

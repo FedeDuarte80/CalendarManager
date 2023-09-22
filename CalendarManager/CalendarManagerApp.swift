@@ -1,17 +1,15 @@
-//
-//  CalendarManagerApp.swift
-//  CalendarManager
-//
-//  Created by Fede Duarte on 22/9/23.
-//
-
 import SwiftUI
 
 @main
 struct CalendarManagerApp: App {
+    @StateObject var oo = ParentManager()
+    
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(.light)
+                .environmentObject(oo)
         }
     }
 }

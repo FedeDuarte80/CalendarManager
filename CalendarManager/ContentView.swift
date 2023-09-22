@@ -1,26 +1,22 @@
-//
-//  ContentView.swift
-//  CalendarManager
-//
-//  Created by Fede Duarte on 22/9/23.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var oo: ParentManager
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            CalendarTab().tabItem {
+             Label("Calendar", systemImage: "calendar")
+            }
+            ListTab().tabItem {
+             Label("List", systemImage: "list.bullet")
+            }
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ParentManager())
     }
 }
