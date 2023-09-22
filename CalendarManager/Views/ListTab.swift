@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct ListTab: View {
-    @Environment(\.dismiss) private var dismiss
     @EnvironmentObject var oo: ParentManager
     @State private var insert = false
     @State private var name = ""
@@ -29,13 +28,14 @@ struct ListTab: View {
                 Text("Add parent")
                 DatePicker("", selection: $date, displayedComponents: .date)
                     .datePickerStyle(.graphical)
-                TextField("name", text: $name)
+                TextField("name", text: $name).padding().border(.black)
                 Button("Save") {
                     oo.addParent(name: name, date: date)
-                    dismiss()
+                    oo.fetchParents()
+                    insert.toggle()
                 }.buttonStyle(.borderedProminent)
                 Spacer()
-            }
+            }.padding()
         }
     }
 }
@@ -43,6 +43,6 @@ struct ListTab: View {
 struct ListTab_Previews: PreviewProvider {
     static var previews: some View {
         ListTab()
-            .environmentObject(ParentManager())
+           .environmentObject(ParentManager())
     }
 }

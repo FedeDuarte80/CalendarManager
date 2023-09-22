@@ -20,7 +20,8 @@ struct CalendarView: UIViewRepresentable {
     }
     func updateUIView(_ uiView: UIViewType, context: Context) {
         if let deleteParent = oo.deleteParent {
-            uiView.reloadDecorations(forDateComponents: [deleteParent.dateComponents], animated: true)
+            let componentsDeleted = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: deleteParent)
+            uiView.reloadDecorations(forDateComponents: [componentsDeleted], animated: true)
             oo.deleteParent = nil
         }
     }
