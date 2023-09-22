@@ -68,10 +68,7 @@
 			children = (
 				88CEF6832ABD1E9300ADE659 /* README.md */,
 				88CEF6652ABD07AF00ADE659 /* CalendarManagerApp.swift */,
-				88CEF6672ABD07AF00ADE659 /* ContentView.swift */,
-				88CEF67D2ABD0D1800ADE659 /* CalendarTab.swift */,
-				88CEF6812ABD0EDB00ADE659 /* UICalendarView.swift */,
-				88CEF67F2ABD0D4E00ADE659 /* ListTab.swift */,
+				88CEF6842ABD1F5000ADE659 /* Views */,
 				88CEF6762ABD07E000ADE659 /* Models */,
 				88CEF6692ABD07B000ADE659 /* Assets.xcassets */,
 				88CEF66B2ABD07B000ADE659 /* Preview Content */,
@@ -96,6 +93,17 @@
 				88CEF6772ABD088B00ADE659 /* ParentManager.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		88CEF6842ABD1F5000ADE659 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88CEF6672ABD07AF00ADE659 /* ContentView.swift */,
+				88CEF67D2ABD0D1800ADE659 /* CalendarTab.swift */,
+				88CEF6812ABD0EDB00ADE659 /* UICalendarView.swift */,
+				88CEF67F2ABD0D4E00ADE659 /* ListTab.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
